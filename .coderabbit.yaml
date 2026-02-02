@@ -1,0 +1,66 @@
+# CodeRabbit Configuration
+# https://docs.coderabbit.ai/guides/configure-coderabbit
+
+# Language for reviews
+language: en-US
+
+# Enable early access features
+early_access: false
+
+# Review settings
+reviews:
+  # Review profile: "chill" | "assertive" 
+  profile: chill
+  
+  # Request changes workflow
+  request_changes_workflow: false
+  
+  # High-level summary of changes
+  high_level_summary: true
+  
+  # Include a poem in reviews
+  poem: true
+  
+  # Show review status
+  review_status: true
+  
+  # Collapse walkthrough section
+  collapse_walkthrough: false
+  
+  # Auto review settings
+  auto_review:
+    enabled: true
+    # Review draft PRs
+    drafts: false
+    # Base branches to auto-review
+    base_branches:
+      - main
+      - master
+      - develop
+  
+  # Code analysis tools
+  tools:
+    # ShellCheck for shell scripts
+    shellcheck:
+      enabled: true
+    # Ruff for Python
+    ruff:
+      enabled: true
+    # ESLint for JavaScript/TypeScript
+    eslint:
+      enabled: true
+    # Biome for JavaScript/TypeScript
+    biome:
+      enabled: false
+
+# Chat settings
+chat:
+  # Auto-reply to comments
+  auto_reply: true
+
+# Path-based instructions (optional)
+# path_instructions:
+#   - path: "src/**/*.ts"
+#     instructions: "Focus on type safety and error handling"
+#   - path: "tests/**/*"
+#     instructions: "Ensure comprehensive test coverage"
