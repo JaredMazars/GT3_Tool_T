@@ -7,6 +7,8 @@ This file was created to test CodeRabbit automated code review functionality.
 - **Date**: February 2, 2026
 - **Purpose**: Verify CodeRabbit integration with GT3_Tool_T repository
 - **Expected Outcome**: CodeRabbit should automatically review this pull request
+- **Repository**: JaredMazars/GT3_Tool_T
+- **Status**: Testing automated PR reviews
 
 ## Code Review Features to Test
 
